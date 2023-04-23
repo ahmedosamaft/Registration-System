@@ -1,0 +1,3 @@
+D:/Registeration System/cmake-build-debug/CMakeFiles/Registeration_System.dir
+D:/Registeration System/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Registeration System/cmake-build-debug/CMakeFiles/rebuild_cache.dir

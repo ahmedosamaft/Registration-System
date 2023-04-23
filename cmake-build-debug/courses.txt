@@ -1,0 +1,6 @@
+CS111 d001 Programming 1
+CS112 d001 Programming 2
+CS136 d003 Programming 3
+MA333 d003 Mathematics 2
+ST240 d002 Statistics 1
+ST360 d004 Statistics 2

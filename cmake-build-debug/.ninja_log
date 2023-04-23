@@ -1,0 +1,18 @@
+# ninja log v5
+3	1475	7039440415280397	CMakeFiles/Registeration_System.dir/main.cpp.obj	633fa41c81454141
+1	105	7039377100209155	build.ninja	17d039a84d938b20
+6	1726	7039420747435185	CMakeFiles/Registeration_System.dir/Doctor.cpp.obj	d9fc2e3fcb13be4e
+1475	1658	7039440417151490	Registeration_System.exe	95db83ff9ef0faea
+3	1348	7039420996911574	CMakeFiles/Registeration_System.dir/Student.cpp.obj	f1031accc45f3c6f
+2	1150	7039401219588138	CMakeFiles/Registeration_System.dir/Person.cpp.obj	c3b7aa4818a5a54d
+21	1774	7039420747913684	CMakeFiles/Registeration_System.dir/Course.cpp.obj	53642df08be23f6c
+6	1433	7039437540930992	CMakeFiles/Registeration_System.dir/AssignmentSolution.cpp.obj	d80b7ca3dd92fe95
+7	1205	7039438180890558	CMakeFiles/Registeration_System.dir/Assignment.cpp.obj	8eb471cb5c3301f2
+3	1655	7039461415041729	CMakeFiles/Registeration_System.dir/main.cpp.obj	633fa41c81454141
+1655	1902	7039461417519231	Registeration_System.exe	95db83ff9ef0faea
+3	1674	7039463079208707	CMakeFiles/Registeration_System.dir/main.cpp.obj	633fa41c81454141
+1674	1902	7039463081475211	Registeration_System.exe	95db83ff9ef0faea
+4	1777	7039463440599975	CMakeFiles/Registeration_System.dir/main.cpp.obj	633fa41c81454141
+1777	1970	7039463442533763	Registeration_System.exe	95db83ff9ef0faea
+3	1594	7039466435295079	CMakeFiles/Registeration_System.dir/main.cpp.obj	633fa41c81454141
+1595	1793	7039466437320158	Registeration_System.exe	95db83ff9ef0faea

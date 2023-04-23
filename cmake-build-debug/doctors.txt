@@ -1,0 +1,4 @@
+d001 Mohamed Elramly CS111 CS112
+d002 Mohamed Abdelwhab ST240
+d003 Ahmed Morsy CS136 MA333
+d004 Syed Elsherbiny ST360
