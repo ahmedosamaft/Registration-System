@@ -38,7 +38,7 @@ void doctorController() {
             sub_menu = {"Give Grade: ", "back"};
             ind = getChoice(sub_menu);
             if (ind != 1) continue;
-            cout << "Choose Student\n";
+            cout << "Choose Student: ";
             cin >> ind;
             if (ind < 1 || ind > chosenAssign->getSolutions().size()) continue;
             auto chosenStudent = chosenAssign->getSolutions()[ind - 1];
