@@ -12,10 +12,12 @@ using namespace std;
 
 class Doctor;
 class Assignment;
+class Student;
 
 class Course {
     string courseID, name;
     shared_ptr<Doctor> teachingDoctor;
+    vector<shared_ptr<Student>> registerStudents;
     vector<shared_ptr<Assignment>> assignments;
 public:
     void setCourse(string courseID, shared_ptr<Doctor> doctorID, string name);
@@ -26,11 +28,18 @@ public:
 
     void addAssignment(shared_ptr<Assignment> assignment);
 
+    void addStudent(shared_ptr<Student> students);
+
+    void setStudents(vector<shared_ptr<Student>> students);
+
+
     string getName();
 
     string getID();
 
     shared_ptr<Doctor> getDoctor();
+
+    vector<shared_ptr<Student>> getStudents();
 
     vector<shared_ptr<Assignment>> getAssignments();
 

@@ -117,7 +117,8 @@
 				11,
 				12,
 				14,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -213,6 +214,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "AssignmentSolution.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DoctorController.h",
 			"sourceGroupIndex" : 1
 		}
 	],

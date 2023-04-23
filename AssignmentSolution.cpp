@@ -17,6 +17,7 @@ void AssignmentSolution::setAnswer(std::string answer) {
 void AssignmentSolution::setStudent(shared_ptr<Student> student) {
     this->student_ = std::move(student);
 }
+
 void AssignmentSolution::setAssignment(shared_ptr<Assignment> assignment) {
     this->assignment = assignment;
 }
@@ -34,5 +35,13 @@ shared_ptr<Student> AssignmentSolution::getStudent() {
 }
 
 shared_ptr<Assignment> AssignmentSolution::getAssignment() {
-    return this->assignment ;
+    return this->assignment;
+}
+
+void AssignmentSolution::setCourse(shared_ptr<Course> course_) {
+    this->course_ = course_;
+}
+
+shared_ptr<Course>  AssignmentSolution::getCourse() {
+   return this->course_;
 }

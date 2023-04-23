@@ -182,12 +182,22 @@ void generateDummyAssignments() {
  *
  * */
 
+
+auto assignStudentToCourses = []() {
+    for (const auto &std: student) {
+        for (const auto &course_: std->getCourse()) {
+            course_->addStudent(std);
+        }
+    }
+};
+
 void readAll() {
     readCourses();
     readDoctors();
     assignDoctorsToCourses();
     readStudents();
     generateDummyAssignments();
+    assignStudentToCourses();
 }
 
 void showCourse(shared_ptr<Course> chosenCourse) {
@@ -197,7 +207,7 @@ void showCourse(shared_ptr<Course> chosenCourse) {
 }
 
 void showAnswer(shared_ptr<AssignmentSolution> answer, shared_ptr<Assignment> assign) {
-    if (answer != nullptr&& answer->getGrade() == -1) {
+    if (answer != nullptr && answer->getGrade() == -1) {
         cout << "Assignment #" << assign->getName() << " - Waiting for Doctor to give you grade" << endl;
     } else
         cout << "Assignment #" << assign->getName() << " - Grade: "
@@ -242,5 +252,26 @@ int showUnregisteredCourses() {
     return choice;
 }
 
+
+void DoctorViewCourse() {
+    int co = 1;
+    for (const auto &cours: loggedDoctor->getCourses()) {
+        cout << co++ << ") Course Name: " << cours->getName()
+             << " - Code: " << cours->getID() << " Total Students: " << cours->getStudents().size() << endl;
+    }
+}
+
+void DoctorViewDetails(shared_ptr<Course> cours) {
+    int c = 1;
+    cout << "- Registered Students:\n";
+    for (const auto &std: cours->getStudents()) {
+        cout << "\t" << c++ << ") ID: " << std->getID() << " Name: " << std->getFullName() << "\n";
+    }
+    cout << "- Assignments:\n";c = 1;
+    for (const auto &std: cours->getAssignments()) {
+        cout << "\t" << c++ << ") Assignment #" << std->getName() << " | Max Grade: " << std->getMaxGrade()
+             << " | Total Solutions: " << std->getSolutions().size() << "\n";
+    }
+}
 
 #endif //REGISTERATION_SYSTEM_HELPER_H

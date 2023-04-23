@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include "Student.h"
 #include "StudentController.h"
-#include "Doctor.h"
+#include "DoctorController.h"
 #include "Course.h"
 
 using namespace std;
@@ -19,6 +19,9 @@ void login() {
     }
     if(loggedStudent){
         studentController();
+    }
+    else if (loggedDoctor){
+        doctorController();
     }
 }
 

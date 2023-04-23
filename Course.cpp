@@ -40,6 +40,20 @@ vector<shared_ptr<Assignment>> Course::getAssignments() {
 
 
 
+void Course::setStudents(vector<shared_ptr<Student>> students) {
+    this->registerStudents = students;
+}
+
+void Course::addStudent(shared_ptr<Student> student) {
+    this->registerStudents.push_back(student);
+}
+
+vector<shared_ptr<Student>> Course::getStudents() {
+    return this->registerStudents;
+}
+
+
+
 
 
 
