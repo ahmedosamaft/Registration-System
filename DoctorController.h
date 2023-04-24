@@ -35,7 +35,7 @@ void doctorController() {
                      << solution->getAnswer() << " | Grade: "
                      << (solution->getGrade() != -1 ? to_string(solution->getGrade()) : "Not Marked Yet") << endl;
             }
-            sub_menu = {"Give Grade: ", "back"};
+            sub_menu = {"Give Grade", "back"};
             ind = getChoice(sub_menu);
             if (ind != 1) continue;
             cout << "Choose Student: ";
